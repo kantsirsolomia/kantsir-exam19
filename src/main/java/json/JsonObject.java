@@ -22,7 +22,7 @@ public class JsonObject extends Json {
 
 
     String lala = "{";
-        StringBuilder strr = new StringBuilder("{");
+
 
         int index = 0;
         for (String key : pairs.keySet()) {
@@ -56,7 +56,7 @@ public class JsonObject extends Json {
         JsonObject proj = new JsonObject();
 
         for (String n: names){
-            Json value = this.find(n);
+            Json value = find(n);
             if(pairs.containsKey(n)){
                 proj.add(new JsonPair(n, value));
 
