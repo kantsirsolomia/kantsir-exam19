@@ -37,7 +37,7 @@ public class JsonObject extends Json {
             }
 
         }
-        System.out.println(lala + "}");
+
         return lala + "}";
 
     }
